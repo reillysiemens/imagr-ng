@@ -1,0 +1,17 @@
+[package]
+name = "imagr"
+version = "0.1.0"
+authors = ["Reilly Tucker Siemens <reilly@tuckersiemens.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.40"
+futures = "0.3.14"
+reqwest = { version = "0.11.3", features = ["json", "stream", "gzip"] }
+serde = { version = "1.0.125", features = ["derive"] }
+serde_derive = "1.0.125"
+serde_json = "1.0.64"
+tokio = { version = "1.5.0", features = ["full"] }
+tokio-util = { version = "0.6.6", features = ["codec"] }
